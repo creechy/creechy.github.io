@@ -1,0 +1,85 @@
+body {
+    background-color: #050017;
+    background-image: url("brick-wall-dark.png");
+    color: #aaa;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #bbb;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li;
+}
+
+li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.local {
+    color: #b88
+}
+
+li:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero) ".";
+    color: red;
+    margin-right: 0.25em;
+}
+
+a:link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.local a:link {
+    color: #b88;
+    text-decoration: none;
+}    
+
+.local a:hover {
+    color: #ddd;
+    text-decoration: none;
+}    
+
+/* visited link */
+a:visited {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #aaa;
+    text-decoration: none;
+}
+
+
+/* Mobile */
+.container {
+    padding-left: 1%;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .container {
+        padding-left: 5%;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .container {
+        padding-left: 10%;
+    }
+}
